@@ -6,5 +6,6 @@ npm install -S highlight.js
 touch scripts/generateComponentData.js
 
 "gen:docs": "node scripts/generateComponentData.js",
+    create config/componentData.js
 
-create config/componentData.js
+touch src/doc/Docs.js
