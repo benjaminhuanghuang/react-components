@@ -1,0 +1,1 @@
+module.exports = [{"name":"HelloWorld","description":"","code":"import React from 'react';\nfunction HelloWorld({message}){\n  return <div> Hello {message} </div>\n}\n\nexport default HelloWorld;","examples":[]}]
