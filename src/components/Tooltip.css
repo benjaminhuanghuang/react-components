@@ -1,16 +1,18 @@
+
+
 .tooltip {
   position: absolute;
   padding: 15px 5px;
   background-color: var(--tooltip-bg);
   color: var(--light);
   min-width: 100px;
-  opacity: 0;
-  transition-property: opacity, transform;
+  /* opacity: 0; */
+  /* transition-property: opacity, transform;
   transform-origin: center center;
-  text-align: center;
+  text-align: center; */
 }
 
-.tooltip--top {
+.tooltip--topd {
   transform: translate(-50%, -15px) scale(0);
 }
 .tooltip--bottom {

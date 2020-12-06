@@ -14,14 +14,15 @@ const TooltipContent = ({ tooltipClass, content, position, tooltipPosition }) =>
     if (el) {
       setTimeout(() => {
         if (tooltipPosition === "top") {
-          el.style.top = `${position.top - el.clientHeight}px}`;
-          el.style.left = `${position.left}px}`;
-          //el.style.trfansform = `translate(-50%, -15px) scale(1)`;
+          el.style.top = `${position.top - el.clientHeight}px`;
+          el.style.left = `${position.left}px`;
+          el.style.trfansform = `translate(-50%, -15px) scale(1)`;
         }
       }, 20);
     }
   }, []);
-const output = <div className={tooltipClass} ref={tooltipEl}>{content}</div>;
+
+  const output = <div className={tooltipClass} ref={tooltipEl}>{content}</div>;
   return targetEl ? ReactDOM.createPortal(output, targetEl) : output;
 };
 
@@ -49,7 +50,7 @@ const Tooltip = ({ children, position, content }) => {
   };
 
   if (position == "top") {
-    tooltipClass += "tooltip--top";
+    tooltipClass += " tooltip--top";
   }
 
   return (
