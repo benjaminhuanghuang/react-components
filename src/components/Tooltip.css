@@ -1,9 +1,3 @@
-:root{
-  --tooltip-bg: #00d1b1;
-  --dark:#0000;
-  --light:#fff;
-}
-
 .tooltip {
   position: absolute;
   padding: 15px 5px;

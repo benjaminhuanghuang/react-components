@@ -1,3 +1,10 @@
+:root{
+  --tooltip-bg: #00d1b1;
+  --dark:#000000;
+  --light:#ffffff;
+}
+
+
 * {
   box-sizing: border-box;
   margin:0;

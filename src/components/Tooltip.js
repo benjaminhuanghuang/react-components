@@ -52,6 +52,7 @@ const Tooltip = ({ children, position, content }) => {
   if (position == "top") {
     tooltipClass += "tooltip--top";
   }
+
   return (
     <>
       {show && (
