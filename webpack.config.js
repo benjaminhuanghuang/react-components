@@ -25,7 +25,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".jsx", ".js"],
   },
   output: {
     path: path.resolve(__dirname, "public"),

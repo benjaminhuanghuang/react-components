@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 //
 import './Tooltip.css'
 
-const TooltipContent = ({ tooltipClass, content, position, tooltip }) => {
+const TooltipContent = ({ tooltipClass, content, position, tooltipPosition }) => {
   const tooltipEl = useRef();
   const targetEl = document.getElementById("root");
 
@@ -21,8 +21,7 @@ const TooltipContent = ({ tooltipClass, content, position, tooltip }) => {
       }, 20);
     }
   }, []);
-
-  const output = <div className={tooltipClass} ref={tooltip}></div>;
+const output = <div className={tooltipClass} ref={tooltipEl}>{content}</div>;
   return targetEl ? ReactDOM.createPortal(output, targetEl) : output;
 };
 
